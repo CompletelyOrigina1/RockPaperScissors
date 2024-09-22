@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="nav-title">Rock Paper Scissor</h1>
+        </div>
+    </header>
+    <section class="game-board">
+        <div class="container">
+            <div class="game-board-top">
+                <div class="player-box">
+                    <h1 class="player-name">Player</h1>
+                    <div class="image-box">
+                        <img src="images/Player.png" alt="" srcset="" id="player-choice">
+                    </div>
+                    <div class="score-box">
+                        <h2 id="player-score">0</h2>
+                    </div>
+                </div>
+                <div class="info-bar">
+                    <p id="player-indicator">😊⬆️</p>
+                    <p id="game-info">Welcome!</p>
+                    <p id="ai-indicator">⬇️🤖</p>
+                </div>
+                <div class="player-box">
+                    <h1 class="player-name">Ai</h1>
+                    <div class="image-box">
+                        <img src="images/Ai.png" alt="" srcset="" id="ai-choice">
+                    </div>
+                    <div class="score-box">
+                        <h2 id="ai-score">0</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="game-board-bottom">
+                <button class="play-btn game-btn" id="ROCK" onclick="playGame(this.id)">ROCK</button>
+                <button class="play-btn game-btn" id="PAPER" onclick="playGame(this.id)">PAPER</button>
+                <button class="play-btn game-btn" id="SCISSORS" onclick="playGame(this.id)">SCISSORS</button>
+                <button class="reset-btn game-btn" id="resetBtn" onclick="resetGame()">RESET</button>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script/app.js"></script>
+</html>
